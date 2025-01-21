@@ -1,8 +1,193 @@
+"use client";
+
+import {
+  Factory,
+  Globe,
+  ShieldCheck,
+  TrendingUp,
+  Users,
+  Gauge,
+} from "lucide-react";
+import { motion } from "framer-motion";
+
+const benefits = [
+  {
+    name: "Market Access",
+    description:
+      "Direct access to U.S. distributors and retailers, from local businesses to major chains",
+    icon: Globe,
+  },
+  {
+    name: "Sales Support",
+    description:
+      "We handle marketing, sales, and customer relationships, letting you focus on manufacturing",
+    icon: TrendingUp,
+  },
+  {
+    name: "Quality Assurance",
+    description:
+      "We ensure your products meet U.S. market standards and regulations",
+    icon: ShieldCheck,
+  },
+  {
+    name: "Customer Insights",
+    description:
+      "Regular feedback and market intelligence to help optimize your product offerings",
+    icon: Users,
+  },
+  {
+    name: "Efficiency",
+    description:
+      "Streamlined communication and order processing with our experienced team",
+    icon: Gauge,
+  },
+  {
+    name: "Growth Partnership",
+    description:
+      "Long-term partnership focused on mutual growth and market expansion",
+    icon: Factory,
+  },
+];
+
+// Add more logos as suppliers join
+const trustedSuppliers = [
+  // Example structure - replace with actual suppliers
+  { name: "Supplier 1", logo: "/api/placeholder/150/80" },
+  { name: "Supplier 2", logo: "/api/placeholder/150/80" },
+  { name: "Supplier 3", logo: "/api/placeholder/150/80" },
+  { name: "Supplier 4", logo: "/api/placeholder/150/80" },
+];
+
 export default function SuppliersPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Our Suppliers</h1>
-      {/* Add your content here */}
-    </main>
+    <div className="bg-black">
+      {/* Hero section */}
+      <div className="relative isolate px-6 pt-14 lg:px-8">
+        <div className="mx-auto max-w-2xl py-16 sm:py-24">
+          <div className="text-center">
+            <motion.h1
+              className="text-4xl font-bold tracking-tight text-white sm:text-6xl"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              Partner With Us
+            </motion.h1>
+            <motion.p
+              className="mt-6 text-lg leading-8 text-zinc-300"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              Join our network of premium hardware manufacturers and expand your
+              reach in the U.S. market. We bridge the gap between quality
+              manufacturers and American distributors.
+            </motion.p>
+          </div>
+        </div>
+      </div>
+
+      {/* Trusted Suppliers section */}
+      <div className="bg-zinc-900/50 py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl lg:max-w-none">
+            <div className="text-center">
+              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Trusted by Leading Manufacturers
+              </h2>
+              <p className="mt-4 text-lg leading-8 text-zinc-300">
+                We work with quality-focused manufacturers to deliver excellence
+                to the U.S. market
+              </p>
+            </div>
+            <div className="mx-auto mt-16 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-2 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+              {trustedSuppliers.map((supplier) => (
+                <motion.div
+                  key={supplier.name}
+                  className="flex items-center justify-center"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <img
+                    className="max-h-12 w-full object-contain"
+                    src={supplier.logo}
+                    alt={supplier.name}
+                  />
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Benefits Grid */}
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-24">
+        <div className="mx-auto max-w-2xl lg:text-center">
+          <h2 className="text-base font-semibold leading-7 text-gold">
+            Why Partner With Us
+          </h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            Expand Your U.S. Market Presence
+          </p>
+          <p className="mt-6 text-lg leading-8 text-zinc-300">
+            We take care of market entry, compliance, and customer
+            relationships, allowing you to focus on what you do best -
+            manufacturing quality products.
+          </p>
+        </div>
+
+        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          {benefits.map((benefit, index) => (
+            <motion.div
+              key={benefit.name}
+              className="border border-zinc-800 rounded-2xl p-8"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 * index }}
+            >
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gold">
+                <benefit.icon
+                  className="h-6 w-6 text-white"
+                  aria-hidden="true"
+                />
+              </div>
+              <div className="mt-4">
+                <h3 className="text-lg font-semibold leading-8 text-white">
+                  {benefit.name}
+                </h3>
+                <p className="mt-2 text-base leading-7 text-zinc-300">
+                  {benefit.description}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+
+      {/* CTA Section */}
+      <div className="bg-zinc-900/50">
+        <div className="px-6 py-32 sm:px-6 sm:py-40 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+              Ready to Expand Your Market?
+            </h2>
+            <p className="mx-auto mt-8 max-w-2xl text-xl leading-8 text-zinc-300">
+              Let&apos;s discuss how we can help you reach more customers in the
+              U.S. market while maintaining your focus on manufacturing
+              excellence.
+            </p>
+            <div className="mt-12 flex items-center justify-center gap-x-6">
+              <a
+                href="/contact"
+                className="rounded-md bg-gold px-8 py-4 text-lg font-semibold text-white shadow-sm hover:bg-gold/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold transition-all duration-200 hover:scale-105"
+              >
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }

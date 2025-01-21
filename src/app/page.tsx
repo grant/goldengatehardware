@@ -72,6 +72,16 @@ export default function HomePage() {
               products at competitive prices while maintaining the highest
               quality standards.
             </motion.p>
+            <motion.img
+              src="/goldengatelogo_v2.png"
+              alt="Hero Image"
+              width={1000}
+              height={1000}
+              className="pt-8"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            />
           </div>
         </div>
       </div>
