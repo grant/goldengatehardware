@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
+    "deploy": "gcloud run deploy goldengatehardware --source . --region us-central1 --platform managed",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

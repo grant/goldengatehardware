@@ -8,12 +8,6 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -33,4 +27,3 @@ gcloud run deploy goldengatehardware --source . --region us-central1 --platform 
 ```
 
 This will deploy the latest version of the code to the `goldengatehardware` service.
-
