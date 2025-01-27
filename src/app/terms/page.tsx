@@ -76,7 +76,7 @@ export default function TermsPage() {
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>
-                All trademarks and logos are property of Golden Gate Hardware
+                All trademarks and logos are property of GoldenGate Hardware
               </li>
               <li>Content may not be reproduced without permission</li>
               <li>
@@ -88,7 +88,7 @@ export default function TermsPage() {
 
           <TermsSection title="Limitation of Liability" delay={0.8}>
             <p>
-              Golden Gate Hardware and its affiliates shall not be liable for:
+              GoldenGate Hardware and its affiliates shall not be liable for:
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Indirect or consequential damages</li>

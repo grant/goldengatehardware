@@ -9,6 +9,8 @@ import {
   Gauge,
 } from "lucide-react";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import { CTA } from "@/components/CTA";
 
 const benefits = [
   {
@@ -92,27 +94,39 @@ export default function SuppliersPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div className="text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              <motion.h2
+                className="text-3xl font-bold tracking-tight text-white sm:text-4xl"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+              >
                 Trusted by Leading Manufacturers
-              </h2>
-              <p className="mt-4 text-lg leading-8 text-zinc-300">
+              </motion.h2>
+              <motion.p
+                className="mt-4 text-lg leading-8 text-zinc-300"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
                 We work with quality-focused manufacturers to deliver excellence
                 to the U.S. market
-              </p>
+              </motion.p>
             </div>
             <div className="mx-auto mt-16 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-2 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-4">
-              {trustedSuppliers.map((supplier) => (
+              {trustedSuppliers.map((supplier, index) => (
                 <motion.div
                   key={supplier.name}
                   className="flex items-center justify-center"
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5 }}
+                  transition={{ duration: 0.5, delay: 0.2 * index }}
                 >
-                  <img
+                  <Image
                     className="max-h-12 w-full object-contain"
                     src={supplier.logo}
                     alt={supplier.name}
+                    width={150}
+                    height={80}
                   />
                 </motion.div>
               ))}
@@ -165,29 +179,7 @@ export default function SuppliersPage() {
         </div>
       </div>
 
-      {/* CTA Section */}
-      <div className="bg-zinc-900/50">
-        <div className="px-6 py-32 sm:px-6 sm:py-40 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
-              Ready to Expand Your Market?
-            </h2>
-            <p className="mx-auto mt-8 max-w-2xl text-xl leading-8 text-zinc-300">
-              Let&apos;s discuss how we can help you reach more customers in the
-              U.S. market while maintaining your focus on manufacturing
-              excellence.
-            </p>
-            <div className="mt-12 flex items-center justify-center gap-x-6">
-              <a
-                href="/contact"
-                className="rounded-md bg-gold px-8 py-4 text-lg font-semibold text-white shadow-sm hover:bg-gold/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold transition-all duration-200 hover:scale-105"
-              >
-                Contact Us
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <CTA />
     </div>
   );
 }

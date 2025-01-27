@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Golden Gate Hardware",
+  title: "GoldenGate Hardware",
   description: "Quality hardware and tools for your next project",
   icons: {
     icon: "/favicon.ico",

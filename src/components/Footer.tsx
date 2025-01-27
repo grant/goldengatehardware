@@ -14,7 +14,7 @@ export function Footer() {
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
           <p className="text-center text-xs leading-5 text-zinc-400">
-            &copy; {new Date().getFullYear()} Golden Gate Hardware. All rights
+            &copy; {new Date().getFullYear()} GoldenGate Hardware. All rights
             reserved.
           </p>
         </div>

@@ -13,6 +13,7 @@ import {
 
 import React from "react";
 import { motion } from "framer-motion";
+import { CTA } from "@/components/CTA";
 
 const features = [
   {
@@ -215,6 +216,7 @@ export default function HomePage() {
           })}
         </div>
       </div>
+      <CTA />
     </div>
   );
 }

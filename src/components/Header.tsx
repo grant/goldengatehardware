@@ -14,7 +14,7 @@ export function Header() {
         <div className="flex items-center gap-x-12">
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-lg font-semibold text-gold">
-              Golden Gate Hardware
+              GoldenGate Hardware
             </span>
           </Link>
           <div className="hidden lg:flex lg:gap-x-12">
