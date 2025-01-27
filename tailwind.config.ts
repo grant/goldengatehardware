@@ -10,7 +10,9 @@ module.exports = {
     extend: {
       colors: {
         brand: {
+          goldLight: "#FFD700", // Adjust this hex code to match your brand gold light
           gold: "#D4AF37", // Adjust this hex code to match your brand gold
+          goldDark: "#B59431",
           dark: "#1A1A1A", // Dark theme background
         },
       },

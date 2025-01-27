@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { CTA } from "@/components/CTA";
 
@@ -73,16 +74,20 @@ export default function HomePage() {
               products at competitive prices while maintaining the highest
               quality standards.
             </motion.p>
-            <motion.img
-              src="/goldengatelogo_v2.png"
-              alt="Hero Image"
-              width={1000}
-              height={1000}
+            <motion.div
               className="pt-8"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-            />
+            >
+              <Image
+                className="mx-auto"
+                src="/goldengatelogo_v2.png"
+                alt="Hero Image"
+                width={600}
+                height={600}
+              />
+            </motion.div>
           </div>
         </div>
       </div>
@@ -103,14 +108,14 @@ export default function HomePage() {
           >
             The GGH Advantage
           </motion.h2>
-          <motion.p
+          <motion.h3
             className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
           >
             Experience the Difference
-          </motion.p>
+          </motion.h3>
         </motion.div>
 
         <div className="mx-auto mt-16 max-w-7xl">

@@ -34,7 +34,7 @@ export const CTA = () => (
         >
           <a
             href="/contact"
-            className="rounded-md bg-gold px-8 py-4 text-lg font-semibold text-white shadow-sm hover:bg-gold/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold transition-all duration-200 hover:scale-105"
+            className="rounded-md bg-brand-gold px-8 py-4 text-lg font-semibold text-black shadow-lg transition-all duration-200 transform hover:bg-brand-goldLight uppercase"
           >
             Contact Us
           </a>
