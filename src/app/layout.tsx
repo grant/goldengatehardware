@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import Script from "next/script";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -16,10 +17,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GoldenGate Hardware",
-  description: "Quality hardware and tools for your next project",
+  metadataBase: new URL("https://goldengatehardware.com"),
+  title:
+    "GoldenGate Hardware | Wholesale Fastener & Building Supply Distributor",
+  description:
+    "Leading wholesale distributor of fasteners, hardware & building supplies. Factory-direct pricing with US-based distribution and technical support.",
+  keywords:
+    "wholesale distributor, fasteners, screws, nuts, bolts, building supplies, construction material, hardware, sourcing agent",
   icons: {
     icon: "/favicon.ico",
+    apple: [{ url: "/apple-icon.png" }],
   },
 };
 
@@ -30,6 +37,33 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full dark">
+      <head>
+        <link
+          rel="preload"
+          href="/fonts/main-font.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <Script id="schema-org" type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WholesaleStore",
+              "name": "GoldenGate Hardware",
+              "description": "Wholesale distributor of fasteners and building supplies with factory-direct pricing",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "San Francisco",
+                "addressRegion": "CA",
+                "addressCountry": "US"
+              },
+              "areaServed": "United States",
+              "serviceType": ["Hardware Distribution", "Fastener Supply", "Building Materials"]
+            }
+          `}
+        </Script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} flex min-h-full flex-col bg-black text-white antialiased`}
       >
