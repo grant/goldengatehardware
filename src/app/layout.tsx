@@ -25,11 +25,7 @@ export const metadata: Metadata = {
   keywords:
     "wholesale distributor, fasteners, screws, nuts, bolts, building supplies, construction material, hardware, sourcing agent",
   icons: {
-    icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-    ],
+    icon: [{ url: "/favicon.ico", sizes: "32x32" }],
     apple: [
       { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
     ],
