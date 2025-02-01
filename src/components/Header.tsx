@@ -6,6 +6,7 @@ interface HeaderNavigationItem {
 }
 
 const headerNavigationLeft: HeaderNavigationItem[] = [
+  { name: "Products", href: "/products" },
   { name: "Suppliers", href: "/suppliers" },
 ];
 const headerNavigationRight: HeaderNavigationItem[] = [

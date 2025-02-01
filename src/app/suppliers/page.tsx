@@ -54,10 +54,10 @@ const benefits = [
 // Add more logos as suppliers join
 const trustedSuppliers = [
   // Example structure - replace with actual suppliers
-  { name: "Supplier 1", logo: "/api/placeholder/150/80" },
-  { name: "Supplier 2", logo: "/api/placeholder/150/80" },
-  { name: "Supplier 3", logo: "/api/placeholder/150/80" },
-  { name: "Supplier 4", logo: "/api/placeholder/150/80" },
+  // { name: "Supplier 1", logo: "/api/placeholder/150/80" },
+  // { name: "Supplier 2", logo: "/api/placeholder/150/80" },
+  // { name: "Supplier 3", logo: "/api/placeholder/150/80" },
+  // { name: "Supplier 4", logo: "/api/placeholder/150/80" },
 ];
 
 export default function SuppliersPage() {
