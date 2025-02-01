@@ -52,7 +52,7 @@ const benefits = [
 ];
 
 // Add more logos as suppliers join
-const trustedSuppliers = [
+const trustedSuppliers: { name: string; logo: string }[] = [
   // Example structure - replace with actual suppliers
   // { name: "Supplier 1", logo: "/api/placeholder/150/80" },
   // { name: "Supplier 2", logo: "/api/placeholder/150/80" },
