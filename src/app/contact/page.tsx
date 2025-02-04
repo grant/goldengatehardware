@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 
 export default function ContactPage() {
   return (
-    <div className="bg-black">
+    <div className="bg-white">
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div className="mx-auto max-w-3xl py-16 sm:py-24">
           <div className="text-center">
             <motion.h1
-              className="text-4xl font-bold tracking-tight text-white sm:text-6xl"
+              className="text-4xl font-bold tracking-tight text-black sm:text-6xl"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -24,7 +24,7 @@ export default function ContactPage() {
         <div className="space-y-12">
           <section className="mb-8">
             <motion.h2
-              className="text-2xl font-semibold text-white mb-4"
+              className="text-2xl font-semibold text-black mb-4"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -32,7 +32,7 @@ export default function ContactPage() {
               Get in Touch
             </motion.h2>
             <motion.div
-              className="text-zinc-300 leading-relaxed space-y-4"
+              className="text-zinc-600 leading-relaxed space-y-4"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
