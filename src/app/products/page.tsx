@@ -155,7 +155,7 @@ const ProductCatalog: React.FC = () => {
               {catalog.screwTypes.map((type, index) => (
                 <div key={index} className="border rounded-lg p-4">
                   <h3 className="text-lg font-semibold">{type.name}</h3>
-                  <p className="mt-2 text-gray-400">{type.description}</p>
+                  <p className="mt-2 text-gray-600">{type.description}</p>
                 </div>
               ))}
             </div>
@@ -172,15 +172,17 @@ const ProductCatalog: React.FC = () => {
           <TabsContent value="surface">
             <div className="space-y-6">
               <div className="border rounded-lg p-4">
-                <h3 className="font-semibold mb-2">Plating</h3>
+                <h3 className="font-semibold mb-2 text-gray-800">Plating</h3>
                 {renderList(catalog.surfaceTreatments.plating)}
               </div>
               <div className="border rounded-lg p-4">
-                <h3 className="font-semibold mb-2">Phosphating</h3>
+                <h3 className="font-semibold mb-2 text-gray-800">
+                  Phosphating
+                </h3>
                 {renderList(catalog.surfaceTreatments.phosphating)}
               </div>
               <div className="border rounded-lg p-4">
-                <h3 className="font-semibold mb-2">Others</h3>
+                <h3 className="font-semibold mb-2 text-gray-800">Others</h3>
                 {renderList(catalog.surfaceTreatments.others)}
               </div>
             </div>
@@ -193,10 +195,10 @@ const ProductCatalog: React.FC = () => {
                   key={index}
                   className="flex items-center border rounded-lg p-4"
                 >
-                  <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                  <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-4 text-gray-800">
                     {index + 1}
                   </div>
-                  <span className="text-lg">{step}</span>
+                  <span className="text-lg text-gray-800">{step}</span>
                 </div>
               ))}
             </div>
@@ -205,15 +207,17 @@ const ProductCatalog: React.FC = () => {
           <TabsContent value="info">
             <div className="space-y-6">
               <div className="border rounded-lg p-4">
-                <h3 className="font-semibold mb-2">Standards</h3>
+                <h3 className="font-semibold mb-2 text-gray-800">Standards</h3>
                 {renderList(catalog.additionalInfo.standards)}
               </div>
               <div className="border rounded-lg p-4">
-                <h3 className="font-semibold mb-2">Materials</h3>
+                <h3 className="font-semibold mb-2 text-gray-800">Materials</h3>
                 {renderList(catalog.additionalInfo.materials)}
               </div>
               <div className="border rounded-lg p-4">
-                <h3 className="font-semibold mb-2">Specifications</h3>
+                <h3 className="font-semibold mb-2 text-gray-800">
+                  Specifications
+                </h3>
                 {renderList(catalog.additionalInfo.specifications)}
               </div>
             </div>
