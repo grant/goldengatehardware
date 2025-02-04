@@ -19,7 +19,8 @@ import { CTA } from "@/components/CTA";
 const features = [
   {
     name: "Cultural Bridge",
-    description: "Seamless communication between US markets and manufacturers",
+    description:
+      "Seamless communication between global markets and manufacturers",
     icon: Languages,
   },
   {

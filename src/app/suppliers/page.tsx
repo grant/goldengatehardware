@@ -16,7 +16,7 @@ const benefits = [
   {
     name: "Market Access",
     description:
-      "Direct access to U.S. distributors and retailers, from local businesses to major chains",
+      "Direct access to global distributors and retailers, from local businesses to major chains",
     icon: Globe,
   },
   {
@@ -28,7 +28,7 @@ const benefits = [
   {
     name: "Quality Assurance",
     description:
-      "We ensure your products meet U.S. market standards and regulations",
+      "We ensure your products meet different market standards and regulations",
     icon: ShieldCheck,
   },
   {
@@ -163,7 +163,7 @@ export default function SuppliersPage() {
             Why Partner With Us
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
-            Expand Your U.S. Market Presence
+            Expand Your Global Market Presence
           </p>
           <p className="mt-6 text-lg leading-8 text-zinc-600">
             We take care of market entry, compliance, and customer
