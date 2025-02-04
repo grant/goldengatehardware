@@ -17,19 +17,19 @@ const PrivacySection = ({
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5, delay }}
   >
-    <h2 className="text-2xl font-semibold text-white mb-4">{title}</h2>
-    <div className="text-zinc-300 leading-relaxed space-y-4">{children}</div>
+    <h2 className="text-2xl font-semibold text-zinc-700 mb-4">{title}</h2>
+    <div className="text-zinc-600 leading-relaxed space-y-4">{children}</div>
   </motion.div>
 );
 
 export default function PrivacyPage() {
   return (
-    <div className="bg-black">
+    <div className="bg-white">
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div className="mx-auto max-w-3xl py-16 sm:py-24">
           <div className="text-center">
             <motion.h1
-              className="text-4xl font-bold tracking-tight text-white sm:text-6xl"
+              className="text-4xl font-bold tracking-tight text-black sm:text-6xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
