@@ -80,13 +80,6 @@ export default function HomePage() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              {/* <Image
-                className="mx-auto"
-                src="/goldengatelogo_v2.png"
-                alt="Hero Image"
-                width={600}
-                height={600}
-              /> */}
               <Image
                 className="mx-auto py-4"
                 src="/product/painted_stainless_screw.JPG"
@@ -94,13 +87,6 @@ export default function HomePage() {
                 width={600}
                 height={100}
               />
-              {/* <Image
-                className="mx-auto"
-                src="/product/type17.jpg"
-                alt="Painted Stainless Screws"
-                width={400}
-                height={200}
-              /> */}
             </motion.div>
           </div>
         </div>
@@ -201,6 +187,30 @@ export default function HomePage() {
             </motion.div>
           </div>
         </div>
+      </div>
+
+      <div className="flex justify-center gap-0">
+        <Image
+          className="mx-auto"
+          src="/product/type17.jpg"
+          alt="Painted Stainless Screws"
+          width={400}
+          height={200}
+        />
+        <Image
+          className="mx-auto"
+          src="/product/type_17_deck.jpg"
+          alt="Painted Stainless Screws"
+          width={400}
+          height={200}
+        />
+        <Image
+          className="mx-auto"
+          src="/product/yellow_zinc_deck.jpg"
+          alt="Painted Stainless Screws"
+          width={400}
+          height={200}
+        />
       </div>
 
       {/* Features grid */}
