@@ -191,27 +191,45 @@ export default function HomePage() {
       </div>
 
       <div className="flex justify-center gap-0">
-        <Image
-          className="mx-auto"
-          src="/product/type17.jpg"
-          alt="Painted Stainless Screws"
-          width={400}
-          height={200}
-        />
-        <Image
-          className="mx-auto"
-          src="/product/type_17_deck.jpg"
-          alt="Painted Stainless Screws"
-          width={400}
-          height={200}
-        />
-        <Image
-          className="mx-auto"
-          src="/product/yellow_zinc_deck.jpg"
-          alt="Painted Stainless Screws"
-          width={400}
-          height={200}
-        />
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <Image
+            className="mx-auto"
+            src="/product/type17.jpg"
+            alt="Painted Stainless Screws"
+            width={400}
+            height={200}
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
+          <Image
+            className="mx-auto"
+            src="/product/type_17_deck.jpg"
+            alt="Painted Stainless Screws"
+            width={400}
+            height={200}
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+        >
+          <Image
+            className="mx-auto"
+            src="/product/yellow_zinc_deck.jpg"
+            alt="Painted Stainless Screws"
+            width={400}
+            height={200}
+          />
+        </motion.div>
       </div>
 
       {/* Features grid */}
