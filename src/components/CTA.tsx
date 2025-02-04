@@ -23,9 +23,9 @@ export const CTA = () => (
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          We offer a wide range of premium fasteners including stainless steel
-          screws, tapping screws, and decking screws - all with factory-direct
-          pricing and expert U.S.-based support.
+          We offer a wide range of premium fasteners including deck screws,
+          stainless steel screws, and self-tapping screws - all with
+          factory-direct pricing and expert U.S.-based support.
         </motion.p>
         <motion.div
           className="mt-12 flex items-center justify-center gap-x-6"

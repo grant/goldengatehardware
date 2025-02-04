@@ -51,13 +51,13 @@ const features = [
 
 export default function HomePage() {
   return (
-    <div className="bg-black">
+    <div className="bg-white">
       {/* Hero section */}
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div className="mx-auto max-w-2xl py-8 sm:py-12">
           <div className="text-center">
             <motion.h1
-              className="text-4xl font-bold tracking-tight text-brand-gold sm:text-6xl"
+              className="text-4xl font-bold tracking-tight text-zinc-900 sm:text-6xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -65,7 +65,7 @@ export default function HomePage() {
               Your Bridge to Quality Hardware
             </motion.h1>
             <motion.p
-              className="mt-6 text-lg leading-8 text-zinc-300"
+              className="mt-6 text-lg leading-8 text-zinc-700"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -87,6 +87,20 @@ export default function HomePage() {
                 width={600}
                 height={600}
               />
+              {/* <Image
+                className="mx-auto"
+                src="/product/painted_stainless_screw.JPG"
+                alt="Painted Stainless Screws"
+                width={600}
+                height={200}
+              />
+              <Image
+                className="mx-auto"
+                src="/product/type17.jpg"
+                alt="Painted Stainless Screws"
+                width={400}
+                height={200}
+              /> */}
             </motion.div>
           </div>
         </div>
@@ -109,7 +123,7 @@ export default function HomePage() {
             The GGH Advantage
           </motion.h2>
           <motion.h3
-            className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl"
+            className="mt-2 text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
@@ -122,15 +136,15 @@ export default function HomePage() {
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
             {/* Without GGH */}
             <motion.div
-              className="rounded-2xl border border-zinc-800 p-8"
+              className="rounded-2xl border border-zinc-200 bg-zinc-50 p-8"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <h3 className="text-xl font-semibold text-white mb-4">
+              <h3 className="text-xl font-semibold text-zinc-900 mb-4">
                 Without GGH
               </h3>
-              <ul className="space-y-4 text-zinc-300">
+              <ul className="space-y-4 text-zinc-600">
                 <li className="flex items-center gap-3">
                   <XIcon className="h-5 w-5 text-red-500" />
                   Complex communication chains
@@ -156,13 +170,13 @@ export default function HomePage() {
 
             {/* With GGH */}
             <motion.div
-              className="rounded-2xl border border-gold p-8"
+              className="rounded-2xl border border-gold bg-zinc-50 p-8"
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
             >
               <h3 className="text-xl font-semibold text-gold mb-4">With GGH</h3>
-              <ul className="space-y-4 text-zinc-300">
+              <ul className="space-y-4 text-zinc-600">
                 <li className="flex items-center gap-3">
                   <CheckIcon className="h-5 w-5 text-green-500" />
                   Direct factory communication
@@ -197,7 +211,7 @@ export default function HomePage() {
             return (
               <motion.div
                 key={feature.name}
-                className="border border-zinc-800 rounded-2xl p-8"
+                className="border border-zinc-200 bg-zinc-50 rounded-2xl p-8"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 * index }}
@@ -209,11 +223,11 @@ export default function HomePage() {
                       aria-hidden="true"
                     />
                   </div>
-                  <h3 className="text-lg font-semibold leading-8 text-white">
+                  <h3 className="text-lg font-semibold leading-8 text-zinc-900">
                     {feature.name}
                   </h3>
                 </div>
-                <p className="mt-4 text-base leading-7 text-zinc-300">
+                <p className="mt-4 text-base leading-7 text-zinc-600">
                   {feature.description}
                 </p>
               </motion.div>

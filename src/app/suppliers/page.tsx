@@ -62,13 +62,13 @@ const trustedSuppliers: { name: string; logo: string }[] = [
 
 export default function SuppliersPage() {
   return (
-    <div className="bg-black">
+    <div className="bg-white">
       {/* Hero section */}
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div className="mx-auto max-w-2xl py-16 sm:py-24">
           <div className="text-center">
             <motion.h1
-              className="text-4xl font-bold tracking-tight text-white sm:text-6xl"
+              className="text-4xl font-bold tracking-tight text-zinc-900 sm:text-6xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -76,7 +76,7 @@ export default function SuppliersPage() {
               Partner With Us
             </motion.h1>
             <motion.p
-              className="mt-6 text-lg leading-8 text-zinc-300"
+              className="mt-6 text-lg leading-8 text-zinc-600"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -90,12 +90,12 @@ export default function SuppliersPage() {
       </div>
 
       {/* Trusted Suppliers section */}
-      <div className="bg-zinc-900/50 py-24 sm:py-32">
+      <div className="bg-zinc-50 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div className="text-center">
               <motion.h2
-                className="text-3xl font-bold tracking-tight text-white sm:text-4xl"
+                className="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
@@ -103,7 +103,7 @@ export default function SuppliersPage() {
                 Trusted by Leading Manufacturers
               </motion.h2>
               <motion.p
-                className="mt-4 text-lg leading-8 text-zinc-300"
+                className="mt-4 text-lg leading-8 text-zinc-600"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
@@ -141,10 +141,10 @@ export default function SuppliersPage() {
           <h2 className="text-base font-semibold leading-7 text-gold">
             Why Partner With Us
           </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <p className="mt-2 text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
             Expand Your U.S. Market Presence
           </p>
-          <p className="mt-6 text-lg leading-8 text-zinc-300">
+          <p className="mt-6 text-lg leading-8 text-zinc-600">
             We take care of market entry, compliance, and customer
             relationships, allowing you to focus on what you do best -
             manufacturing quality products.
@@ -155,7 +155,7 @@ export default function SuppliersPage() {
           {benefits.map((benefit, index) => (
             <motion.div
               key={benefit.name}
-              className="border border-zinc-800 rounded-2xl p-8"
+              className="border border-zinc-200 rounded-2xl p-8 bg-white shadow-sm"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 * index }}
@@ -167,10 +167,10 @@ export default function SuppliersPage() {
                 />
               </div>
               <div className="mt-4">
-                <h3 className="text-lg font-semibold leading-8 text-white">
+                <h3 className="text-lg font-semibold leading-8 text-zinc-900">
                   {benefit.name}
                 </h3>
-                <p className="mt-2 text-base leading-7 text-zinc-300">
+                <p className="mt-2 text-base leading-7 text-zinc-600">
                   {benefit.description}
                 </p>
               </div>
