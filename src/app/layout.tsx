@@ -38,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full dark">
+    <html lang="en" className="h-full">
       <head>
         <Script id="schema-org" type="application/ld+json">
           {`
@@ -60,7 +60,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} flex min-h-full flex-col bg-black text-white antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} flex min-h-full flex-col bg-white text-black antialiased`}
       >
         <Header />
         <main className="flex-1">{children}</main>

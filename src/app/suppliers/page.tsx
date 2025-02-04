@@ -62,13 +62,13 @@ const trustedSuppliers: { name: string; logo: string }[] = [
 
 export default function SuppliersPage() {
   return (
-    <div className="bg-black">
+    <div className="bg-white">
       {/* Hero section */}
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div className="mx-auto max-w-2xl py-16 sm:py-24">
           <div className="text-center">
             <motion.h1
-              className="text-4xl font-bold tracking-tight text-white sm:text-6xl"
+              className="text-4xl font-bold tracking-tight text-zinc-900 sm:text-6xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -76,40 +76,61 @@ export default function SuppliersPage() {
               Partner With Us
             </motion.h1>
             <motion.p
-              className="mt-6 text-lg leading-8 text-zinc-300"
+              className="mt-6 text-lg leading-8 text-zinc-600"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              Join our network of premium hardware manufacturers and expand your
-              reach in the U.S. market. We bridge the gap between quality
-              manufacturers and American distributors.
+              We connect quality manufacturers with buyers across the globe,
+              creating lasting partnerships. Join our network of premium
+              hardware manufacturers and expand your global reach.
             </motion.p>
           </div>
         </div>
       </div>
 
       {/* Trusted Suppliers section */}
-      <div className="bg-zinc-900/50 py-24 sm:py-32">
+      <div className="bg-zinc-50 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div className="text-center">
               <motion.h2
-                className="text-3xl font-bold tracking-tight text-white sm:text-4xl"
-                initial={{ opacity: 0, y: -20 }}
+                className="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl"
+                initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
                 Trusted by Leading Manufacturers
               </motion.h2>
+
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+              >
+                <a
+                  href="https://www.jiameihardware.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    className="mx-auto mt-8 hover:opacity-80 transition-opacity"
+                    src="/logo/jiameihardware.png"
+                    alt="Jiamei"
+                    width={400}
+                    height={200}
+                  />
+                </a>
+              </motion.div>
+
               <motion.p
-                className="mt-4 text-lg leading-8 text-zinc-300"
-                initial={{ opacity: 0, y: -20 }}
+                className="mt-4 text-lg leading-8 text-zinc-600"
+                initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
                 We work with quality-focused manufacturers to deliver excellence
-                to the U.S. market
+                to the global market.
               </motion.p>
             </div>
             <div className="mx-auto mt-16 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-2 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-4">
@@ -117,8 +138,8 @@ export default function SuppliersPage() {
                 <motion.div
                   key={supplier.name}
                   className="flex items-center justify-center"
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.2 * index }}
                 >
                   <Image
@@ -141,10 +162,10 @@ export default function SuppliersPage() {
           <h2 className="text-base font-semibold leading-7 text-gold">
             Why Partner With Us
           </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <p className="mt-2 text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
             Expand Your U.S. Market Presence
           </p>
-          <p className="mt-6 text-lg leading-8 text-zinc-300">
+          <p className="mt-6 text-lg leading-8 text-zinc-600">
             We take care of market entry, compliance, and customer
             relationships, allowing you to focus on what you do best -
             manufacturing quality products.
@@ -155,22 +176,22 @@ export default function SuppliersPage() {
           {benefits.map((benefit, index) => (
             <motion.div
               key={benefit.name}
-              className="border border-zinc-800 rounded-2xl p-8"
+              className="border border-zinc-200 rounded-2xl p-8 bg-white shadow-sm"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 * index }}
             >
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gold">
                 <benefit.icon
-                  className="h-6 w-6 text-white"
+                  className="h-6 w-6 text-zinc-9=700"
                   aria-hidden="true"
                 />
               </div>
               <div className="mt-4">
-                <h3 className="text-lg font-semibold leading-8 text-white">
+                <h3 className="text-lg font-semibold leading-8 text-zinc-900">
                   {benefit.name}
                 </h3>
-                <p className="mt-2 text-base leading-7 text-zinc-300">
+                <p className="mt-2 text-base leading-7 text-zinc-600">
                   {benefit.description}
                 </p>
               </div>

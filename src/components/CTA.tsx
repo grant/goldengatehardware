@@ -15,7 +15,7 @@ export const CTA = () => (
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          Ready to Expand Your Market?
+          Looking for Quality Fasteners?
         </motion.h2>
         <motion.p
           className="mx-auto mt-8 max-w-2xl text-xl leading-8 text-zinc-300"
@@ -23,8 +23,9 @@ export const CTA = () => (
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          Let&apos;s discuss how we can help you reach more customers in the
-          U.S. market while maintaining your focus on manufacturing excellence.
+          We offer a wide range of premium fasteners including deck screws,
+          stainless steel screws, and self-tapping screws - all with
+          factory-direct pricing and expert U.S.-based support.
         </motion.p>
         <motion.div
           className="mt-12 flex items-center justify-center gap-x-6"
