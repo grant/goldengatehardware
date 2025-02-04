@@ -54,7 +54,7 @@ export default function HomePage() {
     <div className="bg-white">
       {/* Hero section */}
       <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="mx-auto max-w-2xl py-8 sm:py-12">
+        <div className="mx-auto max-w-2xl">
           <div className="text-center">
             <motion.h1
               className="text-4xl font-bold tracking-tight text-zinc-900 sm:text-6xl"
@@ -80,21 +80,21 @@ export default function HomePage() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <Image
+              {/* <Image
                 className="mx-auto"
                 src="/goldengatelogo_v2.png"
                 alt="Hero Image"
                 width={600}
                 height={600}
-              />
-              {/* <Image
-                className="mx-auto"
+              /> */}
+              <Image
+                className="mx-auto py-4"
                 src="/product/painted_stainless_screw.JPG"
                 alt="Painted Stainless Screws"
                 width={600}
-                height={200}
+                height={100}
               />
-              <Image
+              {/* <Image
                 className="mx-auto"
                 src="/product/type17.jpg"
                 alt="Painted Stainless Screws"
@@ -107,7 +107,7 @@ export default function HomePage() {
       </div>
 
       {/* Value proposition comparison */}
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-24">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-12">
         <motion.div
           className="mx-auto max-w-2xl lg:text-center"
           initial={{ opacity: 0, y: 20 }}

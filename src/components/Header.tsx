@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 interface HeaderNavigationItem {
   name: string;
@@ -13,6 +14,7 @@ const headerNavigationRight: HeaderNavigationItem[] = [
   { name: "Contact", href: "/contact" },
 ];
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function NavigationLinks({ items }: { items: HeaderNavigationItem[] }) {
   return (
     <div className="flex gap-x-12">
@@ -38,6 +40,13 @@ export function Header() {
       >
         <div className="flex items-center gap-x-12">
           <Link href="/" className="flex items-center space-x-2">
+            <Image
+              className="h-12 w-auto rounded-full"
+              src="/goldengatelogo_v2.png"
+              alt="GoldenGate Hardware Logo"
+              width={48}
+              height={48}
+            />
             <span className="text-lg font-semibold text-brand-gold">
               GoldenGate Hardware
             </span>
