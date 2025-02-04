@@ -70,9 +70,9 @@ export default function HomePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              We simplify the procurement process, ensuring you get the best
-              products at competitive prices while maintaining the highest
-              quality standards.
+              We are a leading distributor of premium construction hardware,
+              specializing in fasteners while continuously expanding our product
+              range.
             </motion.p>
             <motion.div
               className="pt-8"
