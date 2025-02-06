@@ -71,6 +71,13 @@ export default function RootLayout({
             gtag('config', 'G-JTQSFFQT1R');
           `}
         </Script>
+        <Script
+          type="text/javascript"
+          id="hs-script-loader"
+          async
+          defer
+          src="//js-na2.hs-scripts.com/241915962.js"
+        ></Script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} flex min-h-full flex-col bg-white text-black antialiased`}
