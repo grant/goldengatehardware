@@ -44,29 +44,34 @@ const ProductCatalog: React.FC = () => {
   const catalog: ProductCatalog = {
     screwTypes: [
       {
-        name: "Self Drilling Screw",
+        name: "Drywall Screws",
         description:
-          "Also known as drill point screw or self-drilling tapping screw. Generally has self-tapping threads (BSD thread). Unlike regular screws, the tip is not pointed but resembles a drill bit, allowing it to drill its own hole.",
+          "Specifically designed for attaching drywall to wood or metal studs. Features a bugle-shaped head that prevents tearing the drywall paper and is often phosphate-coated to resist corrosion. Market relevance: Lightweight and cost-effective, making them a staple for contractors and DIYers.",
       },
       {
-        name: "Self Tapping Screw",
+        name: "Chipboard Screws",
         description:
-          "A threaded fastener that forms its own thread when driven into a pre-drilled hole in metal or non-metal materials.",
+          "Ideal for particleboard and other composite materials, commonly used in furniture manufacturing, cabinetry and carpentry. Deep threads provide a soft grip in softer materials. Market relevance: With the global rise in affordable furniture manufacturing (e.g. flat-pack furniture), chipboard screws remain in high demand for their ability to securely fasten engineered wood products.",
       },
       {
-        name: "Drywall Screw",
+        name: "Collated Screws",
         description:
-          "Main characteristic is the bugle head design. Available in double-thread fine pitch for metal studs up to 0.8mm thick, and single-thread coarse pitch for wooden studs.",
+          "Supplied in strips or coils for use with automatic screw guns, enhancing efficiency in repetitive tasks. Designed for high-volume, repetitive tasks such as installing decking, flooring, or drywall. Market relevance: Automation in construction is on the rise, making collated screws increasingly popular for their time-saving benefits.",
       },
       {
-        name: "Chipboard Screw",
+        name: "Self-Drilling Screws",
         description:
-          "Primarily used for connections between wooden boards or between wooden boards and thin steel plates. Available in many specifications. Standard: DIN7505",
+          "Equipped with a drill-like point that eliminates the need for pre-drilling, suitable for metal and wood applications. Often coated for corrosion resistance, reducing labor time and increasing productivity. Market relevance: Industries requiring efficiency and precision, such as HVAC, automotive, and metal fabrications.",
       },
       {
-        name: "Machine Screw",
+        name: "Self-Tapping Screws",
         description:
-          "Mainly used for fastening connections between a threaded hole component and a component with a through hole.",
+          "Features sharp cutting edges to create their threads as they are driven into material. Can be used with plastic, wood, or thin metals. Frequently used in assembling electrical components, toys, and appliances. Market relevance: The versatility of self-tapping screws makes them indispensable across multiple sectors, including electronics and consumer goods.",
+      },
+      {
+        name: "Construction Screws",
+        description:
+          "Heavy-duty screws designed for structural applications. Handle structural loads, commonly longer and thicker, with reinforced threading for better grip. Used for building wooden decks, framing, and other load-bearing structures. Market relevance: The surge in infrastructure projects and residential construction globally boosts the demand for construction screws; essential for professional builders.",
       },
     ],
     headTypes: [
